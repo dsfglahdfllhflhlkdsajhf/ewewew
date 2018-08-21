@@ -45,7 +45,7 @@ client.on("voiceStateUpdate", (o,n) => {
             n.setVoiceChannel(c);
         })
     };
-    if (o.voiceChannel.name == o.user.username) {
+if (o.guild.channels.get(o.voiceChannelID).name == o.user.username) {
         o.voiceChannel.delete();
     };
 })
