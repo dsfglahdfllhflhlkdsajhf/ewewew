@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client({disableEveryone: true});
-const prefix = "#";
 
 client.on('ready', Ryu => {
   client.user.setGame("Alpha Codes.", "https://www.twitch.tv/idk");
